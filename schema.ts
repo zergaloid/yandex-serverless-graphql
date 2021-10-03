@@ -8,7 +8,7 @@ export const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: "Query",
     fields: () => ({
-      alphabet: {
+      test: {
         type: GraphQLString,
         resolve: async function () {
           return new Date().getTime();
