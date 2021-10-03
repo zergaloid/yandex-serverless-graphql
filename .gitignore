@@ -4,3 +4,6 @@ node_modules
 
 # Compiled schema
 schema.js
+
+# Serverless framework
+.serverless
