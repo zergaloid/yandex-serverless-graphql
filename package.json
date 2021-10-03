@@ -2,8 +2,9 @@
   "name": "manydb-graphql",
   "version": "1.0.0",
   "scripts": {
-    "deploy": "serverless deploy",
-    "invoke": "serverless invoke -f node-dev-manydb-graphql"
+    "build": "tsc schema.ts",
+    "fn:deploy": "serverless deploy",
+    "deploy": "npm run build && npm run fn:deploy"
   },
   "dependencies": {
     "graphql": "^15.6.0",
