@@ -1,0 +1,16 @@
+{
+  "name": "manydb-graphql",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "invoke": "serverless invoke -f node-dev-manydb-graphql"
+  },
+  "dependencies": {
+    "graphql": "^15.6.0",
+    "graphql-helix": "^1.8.0",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "serverless-yandex-cloud": "0.1.3"
+  }
+}

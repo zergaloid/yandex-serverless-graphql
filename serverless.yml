@@ -1,0 +1,31 @@
+service: node
+name: yandex-cloud-fn
+
+configValidationMode: off
+
+provider:
+  name: yandex-cloud
+  runtime: nodejs12
+
+plugins:
+  - serverless-yandex-cloud
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ./*.js
+    - ./*.json
+
+functions:
+  manydb-graphql:
+    handler: index.graphql
+    memory: 128
+    timeout: 5
+    account: function-sa
+
+resources:
+  function-sa:
+    type: yc::ServiceAccount
+    roles:
+      - editor
