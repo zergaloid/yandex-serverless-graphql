@@ -1,5 +1,5 @@
 {
-  "name": "manydb-graphql",
+  "name": "yandex-serverless-graphql",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc schema.ts",
